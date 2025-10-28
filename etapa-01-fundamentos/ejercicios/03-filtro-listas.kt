@@ -3,8 +3,11 @@ fun main() {
     val entrada = readln()
 
     // Convertimos la entrada en una lista de enteros
-    val numeros = entrada.split(",")
-        .map { it.trim().toIntOrNull()} // convierte a Int o null
+    val numeros = entrada.split(",") // Divide una cadena en partes.
+        .map { 
+            it.trim() // Quita espacios innecesarios.
+            .toIntOrNull() // Convierte texto a número, devuelve null si falla.
+        } // Transforma cada elemento de una lista.
         .filterNotNull() // elimina los nulos
     
     print("Ingrese el número mínimo a filtrar: ")
