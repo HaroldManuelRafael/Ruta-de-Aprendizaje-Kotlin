@@ -1,2 +1,5 @@
 /etapa-01-fundamentos/ejercicios/bin/*
 !/etapa-01-fundamentos/ejercicios/bin/.gitkeep
+/etapa-02-poo/ejercicios/bin/*
+!/etapa-02-poo/ejercicios/bin/.gitkeep
+/etapa-01-fundamentos/pruebas/inventario/*.jar
