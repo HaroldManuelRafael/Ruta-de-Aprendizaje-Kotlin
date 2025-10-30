@@ -1,15 +1,15 @@
 class Producto(nombre: String, precio: Double) {
     var nombre: String = nombre
-    get() = field.uppercase()
-    set(value) {
-        field = value.trim()
-    }
+        get() = field.uppercase()
+        set(value) {
+            field = value.trim()
+        }
 
     var precio: Double = precio
-    get() = field
-    set(value) {
-        field = if(value < 0) 0.0 else value
-    }
+        get() = field
+        set(value) {
+            field = if(value < 0) 0.0 else value
+        }
 
     fun mostrarInfo() {
         println("Producto: $nombre | Precio: S/ ${"%.2f".format(precio)}")
